@@ -60,15 +60,11 @@ const removeSpaces = string => {
 };
 
 const sumNumbers = numbers => {
-  let sum = numbers.reduce((a, b) =>{
-    return a + b;
-  });
-  return sum;
-  };
+  return numbers.reduce((a, b) => { return a + b;});
+};
 
 const sortByLastLetter = strings => {
-  let string1 = strings.toString();
-  return string1;
+  return strings.sort((a, b) => a.charCodeAt(a.length -1) - b.charCodeAt(b.length -1));
 };
 
 module.exports = {
